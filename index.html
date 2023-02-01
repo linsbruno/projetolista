@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Lista telefonica</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./img/icone.png" alt="Catalogo Telefonico PNG">
+            <h1>Catalogo de Telefones</h1>
+        </header>
+    <form id="formulario">
+        <input type="text" id="nomeContato" required placeholder="Nome do Contato" >
+        <input type="number" id="telefone" required placeholder="Telefone">
+        <button type="submit"> Salvar Contato </button>
+    </form>
+    <table cellspacing="0">
+        <thead>
+            <tr><!-- "Table Row" define uma linha a uma tabela -->
+                <th>Contato</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td id="nomecontato-valor">- - -</td>
+                <td id="telefone-valor">- - -</td>
+            </tr>
+        </tfoot>
+    </table>
+    </div>
+    <script src="./ap.js"></script>
+    
+</body>
+</html>
